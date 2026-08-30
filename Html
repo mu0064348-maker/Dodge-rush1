@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodge Rush</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="game-wrapper">
+
+    <header class="top-bar">
+      <h1>DODGE RUSH</h1>
+
+      <div class="stats">
+        <span>Score: <b id="score">0</b></span>
+        <span>Coins: <b id="coins">0</b></span>
+        <span>❤️ <b id="lives">3</b></span>
+      </div>
+    </header>
+
+    <main id="game">
+      <div id="player">🧑</div>
+
+      <div id="start-screen" class="screen">
+        <h2>⚡ DODGE RUSH</h2>
+        <p>Dodge obstacles and collect coins!</p>
+        <button id="startBtn">START GAME</button>
+        <p class="help">Desktop: ← → or A / D<br>Mobile: use the buttons below</p>
+      </div>
+
+      <div id="game-over" class="screen hidden">
+        <h2>GAME OVER</h2>
+        <p>Your Score</p>
+        <strong id="finalScore">0</strong>
+        <p>Best Score: <span id="bestScore">0</span></p>
+        <button id="restartBtn">PLAY AGAIN</button>
+      </div>
+
+      <div id="powerupMessage"></div>
+    </main>
+
+    <div class="controls">
+      <button id="leftBtn">⬅</button>
+      <button id="rightBtn">➡</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
